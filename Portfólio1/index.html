@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta
+        name="description"
+        content="Portfólio de Diego Nicolau Norberto, estudante de desenvolvimento web com foco em HTML, CSS, JavaScript e criação de interfaces modernas."
+    >
+    <meta name="author" content="Diego Nicolau Norberto">
+
+    <title>Portfólio | Diego Nicolau Norberto</title>
+
+    <link rel="stylesheet" href="./styles/styles.css">
+</head>
+
+<body>
+    <header class="cabecalho" id="topo">
+        <button class="botao-tema" type="button" aria-label="Alternar para tema escuro">
+            Tema escuro
+        </button>
+
+        <figure class="perfil">
+            <img
+                class="perfil-imagem"
+                src="./assets/foto.jpeg"  
+                alt="Foto de perfil de Diego Nicolau Norberto"
+            >
+        </figure>
+
+        <h1 class="cabecalho-titulo">Diego Nicolau Norberto</h1>
+
+        <p class="cabecalho-subtitulo">
+            Estudante de Desenvolvimento Web | HTML, CSS e JavaScript
+        </p>
+
+        <nav class="menu" aria-label="Navegação principal">
+            <ul class="menu-lista">
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#projetos">Projetos</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="conteudo">
+        <section id="sobre" class="secao animar">
+            <h2>Sobre Mim</h2>
+
+            <p>
+                Olá! Me chamo Diego Nicolau Norberto e estou em formação na área de desenvolvimento web. Tenho estudado HTML, CSS, JavaScript e boas práticas para criar páginas modernas, organizadas e responsivas.
+            </p>
+
+            <p>
+                Meu objetivo é evoluir como desenvolvedor, construindo projetos que unam boa estrutura de código, visual agradável e uma experiência clara para o usuário.
+            </p>
+
+            <p>
+                Atualmente, estou desenvolvendo meu portfólio profissional como parte do meu processo de aprendizado, aplicando na prática conceitos de semântica, estilização, responsividade e interatividade.
+            </p>
+        </section>
+
+        <section id="projetos" class="secao animar">
+            <h2>Projetos</h2>
+
+            <p>
+                Aqui estão alguns projetos desenvolvidos durante meus estudos. Cada projeto representa uma etapa da minha evolução e reúne conceitos importantes de desenvolvimento web.
+            </p>
+
+            <div class="filtros-projetos">
+                <button type="button" class="ativo" data-filtro="todos">Todos</button>
+                <button type="button" data-filtro="html-css">HTML/CSS</button>
+                <button type="button" data-filtro="javascript">JavaScript</button>
+            </div>
+
+            <div class="projetos-lista">
+                <article class="projeto-card" data-categoria="html-css">
+                    <h3>Portfólio Pessoal</h3>
+
+                    <p>
+                        Site pessoal criado para apresentar minha trajetória, meus estudos, minhas habilidades e meus projetos na área de desenvolvimento web.
+                    </p>
+
+                    <p>
+                        O projeto foi desenvolvido com HTML e CSS, utilizando estrutura semântica, organização visual, responsividade e variáveis CSS para facilitar futuras alterações no design.
+                    </p>
+
+                    <span class="projeto-status">Em desenvolvimento</span>
+                </article>
+
+                <article class="projeto-card" data-categoria="javascript">
+                    <h3>Interatividade do Portfólio</h3>
+
+                    <p>
+                        Implementação de funcionalidades com JavaScript para melhorar a experiência do usuário dentro do portfólio.
+                    </p>
+
+                    <p>
+                        Entre os recursos estão alternância de tema claro e escuro, filtro de projetos, botão de voltar ao topo e animações ao rolar a página.
+                    </p>
+
+                    <span class="projeto-status">Em desenvolvimento</span>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer class="rodape" id="contato">
+        <h2>Contato</h2>
+
+        <p>
+            Estou aberto a conexões, oportunidades de aprendizado e troca de experiências na área de tecnologia.
+        </p>
+
+        <ul class="contato-lista">
+            <li>
+                <a href="mailto:diegonicolaunorberto@gmail.com">
+                    <img src="assets/gmail.png" alt="" aria-hidden="true">
+                    <span>Email</span>
+                </a>
+            </li>
+
+            <li>
+                <a
+                    href="https://www.linkedin.com/in/diego-nicolau-norberto-026434401"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    <img src="assets/linkedin.png" alt="" aria-hidden="true">
+                    <span>LinkedIn</span>
+                </a>
+            </li>
+
+            <li>
+                <a
+                    href="https://github.com/DiegoNN1503"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    <img src="assets/github.png" alt="" aria-hidden="true">
+                    <span>GitHub</span>
+                </a>
+            </li>
+
+            <li>
+                <a
+                    href="https://discord.com/users/295677415567654913"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    <img src="assets/discord.png" alt="" aria-hidden="true">
+                    <span>Discord</span>
+                </a>
+            </li>
+
+            <li>
+                <a href="tel:+5531992609058">
+                    <img src="assets/telefone.png" alt="" aria-hidden="true">
+                    <span>Telefone</span>
+                </a>
+            </li>
+        </ul>
+
+        <p>&copy; <span data-ano>2026</span> Diego Nicolau Norberto. Todos os direitos reservados.</p>
+    </footer>
+
+    <button class="botao-topo" type="button" aria-label="Voltar ao topo">
+        Topo
+    </button>
+
+    <script src="script.js"></script>
+</body>
+</html>
